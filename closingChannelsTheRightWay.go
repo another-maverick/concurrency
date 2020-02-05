@@ -9,7 +9,7 @@ func main(){
 	//data is a bi directional channel that contains the message
 	data := make(chan string)
 	//endTime is a channel that gets message after 60 secs
-	endTime := time.After(60 * time.Second)
+	endTime := time.After(20 * time.Second)
 	//done is channel that is used by receiver to signal sender that I am done
 	done := make(chan bool)
 
